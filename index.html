@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magasnyomású tisztitás">
+    <title>Magasnyomású felülettisztítás országosan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- color1:rgba(213,168,67,255)(#d5a843) -->
+    <!-- color2:rgba(191,151,56,255)(#bf9738) -->
+</head>
+<body class="bg-gradient-to-r from-slate-900 to-[#d5a843] bg-no-repeat">
+    
+<nav class="bg-[#d5a843] border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./img/logo.avif" class="h-8 w-8" alt="Vallalkozas_logo" />
+        <span class="self-center text-2xl font-semibold  text-base">Magasnyomású felülettisztítás országosan</span>
+    </a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm bg-[white] text-gray-500 rounded-lg md:hidden hover:bg-[#bf9738] focus:outline-none focus:ring-2 focus:ring-black" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Menü kincsitása</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#bf9738] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#d5a843]">
+        <li>
+          <a href="#rolunk" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-100 md:p-0">Rólunk</a>
+        </li>
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-100 md:p-0 md:w-auto">Szolgáltatásaink<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-20 hidden font-normal bg-[#d5a843] divide-y divide-gray-700 rounded-lg shadow w-44 border border-black">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Tetőmosás</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Homlokzat tisztitás</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200 z-20">Egyéb Felületi Munkák</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Ingyenes Felmérés</a>
+                </div>
+            </div>
+        </li>
+        <li>
+          <a href="#elethetoseg" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-100 md:p-0">Lépj Kapcsolatba</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="relative w-full max-w-sm m-auto border-2 border-gray-200 rounded-lg shadow-sm mt-8 bg-[#bf9738] text-center">
+    <p class="font-bold">Elvégzett Munkák</p>
+</div>
+
+<div id="default-carousel" class="relative w-full max-w-5xl m-auto border border-gray-200 rounded-lg shadow-sm mt-4 bg-[#bf9738]" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 z-10">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/munkae1.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/munkav1.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/munkae2.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/munkav2.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="lg:w-3 h-3 rounded-full sm:w-6 sm:h-6" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="lg:w-3 lg:h-3 rounded-full sm:w-6 sm:h-6" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="lg:w-3 lg:h-3 rounded-full sm:w-6 sm:h-6" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="lg:w-3 lg:h-3 rounded-full sm:w-6 sm:h-6" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+<div class="relative w-full max-w-sm m-auto border-2 border-gray-200 rounded-b-none border-b rounded-2xl shadow-sm mt-24 bg-[#bf9738] text-center">
+    <p class="font-bold" id="rolunk">Rólunk</p>
+</div>
+
+<div class="mb-2 border border-gray-200 rounded-lg rounded-b-none shadow-sm bg-[#bf9738] m-auto mt-4 max-w-5xl">
+    <div>
+        <h2 class="text-center m-auto uppercase font-semibold border-2 border-white max-w-sm border-rounded rounded-b-2xl border-t-0">Alap Információk</h2>
+        <p class="m-2 p-2">
+            Tetőtisztítás, mint szolgáltatás magasnyomású mosóval történik, melyhez csak vízvételi forrásra van szükségünk (pl. egy kerti-, vagy hálózati csap). <br><br>
+
+            Az évek során lerakódott, képződött (pl. moha, alga, füst, por és egyéb) szennyeződések eltávolítására ajánljuk, mivel lényegesen olcsóbb, mint egy komplett tetőcsere.
+        </p>
+    </div>
+</div>
+<div class="mb-16 border border-gray-200 rounded-lg rounded-t-none shadow-sm bg-[#bf9738] m-auto max-w-5xl">
+    <div>
+    <h2 class="text-center m-auto uppercase font-semibold border-2 border-white max-w-sm border-rounded rounded-b-2xl border-t-0">Árazás</h2>
+        <p class="m-2 p-2">
+            A tetőtisztítás alapára: <span class="font-medium">900,- Ft/m<sup>2</sup> <br><br> </span>
+
+            Függ a tető kialakításától, méretétől, szennyezettségétől, ezért minden esetben előzetes helyszíni felmérés szükséges.
+        </p>
+    </div>
+</div>
+
+<div id="elethetoseg" class="relative w-full bg-black bg-opacity-50 py-8">
+    <div class="relative bg-white bg-opacity-60 lg:max-w-xl m-auto border-dashed border-2 border-black rounded-lg p-2 sm:max-w-full">
+          <p class="text-center"> Telefonszám: +361234567 </p>
+          <p class="text-center"> Email: orszagostiszitas@gmail.com </p>
+          <p class="text-center"> Cím: Szentes, Hungary, 6600 </p>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
